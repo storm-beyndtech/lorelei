@@ -1,0 +1,172 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  width: 100vw;
+  scroll-behavior: smooth;
+  position: relative;
+  overflow-x: hidden;
+}
+
+
+@layer components {
+  .max-ctn {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0px 16px;
+  }
+
+  .input {
+    @apply sm:flex-1 max-sm:w-full text-base leading-normal text-slate-900 pl-5 max-sm:p-4 outline-none sm:border-none border max-sm:border-slate-900 max-sm:rounded-full;
+  }
+
+  .txtGradient {
+    @apply text-transparent bg-clip-text bg-gradient-to-r to-[#A1BB00] from-[#FF7A00]
+  }
+
+  .desc {
+    @apply w-full text-lg font-normal text-black/70 pt-8 leading-loose max-sm:leading-normal
+  }
+
+  .label {
+    @apply block p-1 text-xs font-light text-white/90 capitalize
+  }
+}
+
+@layer base {
+  body {
+    @apply font-sans;
+  }
+}
+
+
+
+/* nav styles start */
+.ctn{
+  width: 100%;
+  background: transparent;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
+.ctnBg{
+  background-color: #ffffffcc;
+  backdrop-filter: blur(20px);
+}
+
+.ctnBg .wrp{
+  justify-content: space-between;
+}
+
+.wrp{
+  width: 100%;
+  margin: 0 auto;
+  padding: 25px 0;
+  display: flex;
+  align-items: center;
+  gap: 150px;
+}
+
+.logo{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.logo h1{
+  font-size: 1.2rem;
+  font-weight: 400;
+  letter-spacing: -1.5px;
+  color: #0e0015;
+}
+
+.menu{
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.menu a{
+  font-size: 1rem;
+  font-weight: 400;
+  color: #0e0015;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.menu a::after{
+  content: '';
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 20px;
+  height: 2px;
+  background-color: #0e0015;
+  transition: all 0.3s ease;
+  border-radius: 1px;
+}
+
+.menu a:hover::after{
+  width: 100%;
+  background-color: #FF6452;
+}
+
+.close, .open{
+  display: none;
+}
+
+
+@media screen and (max-width: 900px) {
+.wrp{
+  padding: 20px 10px;
+  justify-content: space-between;
+}
+
+.menu{
+  flex-direction: column;
+  width: 200px;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  right: -200px;
+  background-color: #ffffffb0;
+  backdrop-filter: blur(20px);
+  align-items: flex-start;
+  justify-content: center;
+  padding-left: 50px;
+  transition: all 0.3s ease;
+}
+
+.menu a{
+  font-size: 1.2rem;
+}
+
+
+.menu a::after{
+  width: 15px;
+}
+
+.close, .open{
+  display: block;
+  font-size: 2rem;
+}
+
+.close{
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+}
+}
+/* nav styles end */
