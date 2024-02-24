@@ -1,4 +1,4 @@
-import servicesImg from "../app/assets/lorelei-elizabeth-john-6.jpg";
+import servicesImg from "../app/assets/lorelei_elizabeth_john_6.jpg";
 import tradingImg from "../app/assets/trading.jpg";
 import agricultureImg from "../app/assets/agriculture.jpg";
 import realEstateImg from "../app/assets/real-estate.jpg";
