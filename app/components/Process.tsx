@@ -12,7 +12,7 @@ export default function Process() {
             Process
           </h1>
           <p className='desc mb-7'>
-          With a decade-long career, I've adeptly managed portfolios surpassing $9.17 billion, serving 600 clients. Prioritizing investment security and profit maximization, trust in my expertise to deliver exceptional results, safeguarding your investments with meticulous care.
+          With a decade-long career, I&apos;ve adeptly managed portfolios surpassing $9.17 billion, serving 600 clients. Prioritizing investment security and profit maximization, trust in my expertise to deliver exceptional results, safeguarding your investments with meticulous care.
           </p>
           <Button 
             label={"Start today!"} 

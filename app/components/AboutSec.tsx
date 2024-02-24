@@ -23,11 +23,11 @@ export default function AboutSec() {
             Experience
           </h1>
           <p className='desc mb-5'>
-            Having collaborated with 600+ clients across 23 counties spanning 4 continents, I've learned that success knows no bounds, and its foundations lie within each individual, regardless of origin.
+            Having collaborated with 600+ clients across 23 counties spanning 4 continents, I&apos;ve learned that success knows no bounds, and its foundations lie within each individual, regardless of origin.
           </p>
 
           <p className='desc mb-5'>
-            My commitment extends beyond mere satisfaction; I relentlessly pursue my clients' financial objectives until they are accomplished. This unwavering dedication has become my signature in the industry, ensuring no one is left behind in achieving their goals.
+            My commitment extends beyond mere satisfaction; I relentlessly pursue my clients financial objectives until they are accomplished. This unwavering dedication has become my signature in the industry, ensuring no one is left behind in achieving their goals.
           </p>
         </div>
 

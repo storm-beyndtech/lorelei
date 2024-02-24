@@ -62,7 +62,7 @@ export default function Testimonials({ data }:{data: TestimonialsProp}) {
                 <div className="flex flex-col bg-gray-800/30 rounded-xl">
                   <div className="flex-auto p-4 md:p-6">
                     <p className="text-base md:text-lg text-gray-400">
-                      "{item.message}"
+                    &quot;{item.message}&quot;
                     </p>
                   </div>
   
