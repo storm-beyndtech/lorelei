@@ -1,6 +1,6 @@
 import Image from "next/image"
 import { IoIosArrowRoundForward } from "react-icons/io";
-import heroImg from "../assets/lorelei_elisabeth_john_3.jpg"
+import heroImg from "../assets/lorelei_elisabeth_john.jpg"
 import Button from "../components/Button"
 
 export default function Hero() {
