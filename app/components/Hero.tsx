@@ -19,7 +19,7 @@ export default function Hero() {
             </span>
           </h1>
           <p className="w-[500px] max-xl:w-full text-slate-gray text-lg max-sm:text-base leading-7 max-md:mt-7 mb-8">
-          Path to financial success through personalized coaching and expert guidance.
+            Path to financial success through personalized coaching and expert guidance.
           </p>
 
           <Button 
