@@ -1,4 +1,4 @@
-import nodemailer from 'nodemailer';
+import nodemailer from "nodemailer";
 
 interface ContactFormData {
   name: string;
@@ -8,12 +8,19 @@ interface ContactFormData {
   message: string;
 }
 
-const contactMailer = (transporter: nodemailer.Transporter, name: string, country: string, email: string, phone: string, message: string,) => {
+const contactMailer = (
+  transporter: nodemailer.Transporter,
+  name: string,
+  country: string,
+  email: string,
+  phone: string,
+  message: string,
+) => {
   // setup email data
   let mailOptions = {
     from: `help@loreleielisabeth.com`,
     to: `help@loreleielisabeth.com`,
-    subject: 'New Contact Message!',
+    subject: "New Contact Message!",
     html: `
       <html>
       <head>
@@ -52,25 +59,29 @@ const contactMailer = (transporter: nodemailer.Transporter, name: string, countr
 };
 
 export async function POST(request: Request) {
-    const { name, country, email, phone, message }: ContactFormData = await request.json();
+  const { name, country, email, phone, message }: ContactFormData =
+    await request.json();
 
-    let transporter = nodemailer.createTransport({
-      host: 'mail.privateemail.com',
-      port: 465,
-      secure: true,
-      auth: {
-        user: `help@loreleielisabeth.com`,
-        pass: `3099545689`
-      },
-      connectionTimeout: 10000,
-    });
+  let transporter = nodemailer.createTransport({
+    host: "mail.privateemail.com",
+    port: 465,
+    secure: true,
+    auth: {
+      user: `help@loreleielisabeth.com`,
+      pass: `3099545689`,
+    },
+    connectionTimeout: 10000,
+  });
 
-    try {
-      contactMailer(transporter, name, country, email, phone, message);
-      return Response.json({ message: 'Message sent successfully!' });
-    } catch (error) {
-      return Response.json({ message: (error as Error).message }, {
+  try {
+    contactMailer(transporter, name, country, email, phone, message);
+    return Response.json({ message: "Message sent successfully!" });
+  } catch (error) {
+    return Response.json(
+      { message: (error as Error).message },
+      {
         status: 500,
-      })
-    }
+      },
+    );
+  }
 }
