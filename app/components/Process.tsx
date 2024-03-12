@@ -21,7 +21,7 @@ export default function Process() {
         </div>
 
         <div className="w-full max-w-xl relative">
-          <Image className="w-full" src={agreementImg} alt="Lorelei Elizabeth John" width={500}/>
+          <Image className="w-full" src={agreementImg} alt="Lorelei Elisabeth John" width={500}/>
         </div>
       </div>
     </section>

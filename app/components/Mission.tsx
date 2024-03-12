@@ -8,7 +8,7 @@ export default function Mission() {
     <section className="w-full bg-[#f0efed]/40">
       <div className="max-ctn min-h-screen flex justify-between items-center flex-wrap-reverse max-md:gap-14 py-14">
         <div className="w-full max-w-lg relative">
-          <Image className="w-full" src={processImg} alt="Lorelei Elizabeth John" width={500}/>
+          <Image className="w-full" src={processImg} alt="Lorelei Elisabeth John" width={500}/>
         </div>
 
         <div className="w-full max-w-lg text-black">

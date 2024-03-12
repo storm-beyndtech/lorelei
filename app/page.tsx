@@ -7,11 +7,15 @@ import Services from "./components/Services"
 import Process from "./components/Process"
 import Testimonials from "./components/Testimonials"
 import Footer from "./components/Footer"
+import Head from "next/head"
 
 export default function Home() {
   return (
     <>
-      <main className="">
+            <Head>
+        <title>For the future</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+      </Head>
         <Nav />
         <Hero />
         <Mission />
@@ -20,7 +24,6 @@ export default function Home() {
         <LightSection secData={services}/>
         <Testimonials data={testimonies}/>
         <Footer />
-      </main>
     </>
   )
 }

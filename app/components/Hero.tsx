@@ -1,6 +1,6 @@
 import Image from "next/image"
 import { IoIosArrowRoundForward } from "react-icons/io";
-import heroImg from "../assets/lorelei_elizabeth_john_3.jpg"
+import heroImg from "../assets/lorelei_elisabeth_john_3.jpg"
 import Button from "../components/Button"
 
 export default function Hero() {
@@ -29,7 +29,7 @@ export default function Hero() {
 
         <div className="relative flex flex-1 justify-center items-center xl:min-h-screen max-md:py-20">
           <Image src={heroImg} 
-            alt="Lorelei Elizabeth John" width={400}
+            alt="Lorelei Elisabeth John" width={400}
             className="w-full object-contain relative z-10 rounded-bl-[300px] max-sm:rounded-bl-[150px]"
           />
         </div>

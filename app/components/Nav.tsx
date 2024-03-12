@@ -40,7 +40,7 @@ export default function Nav() {
     <div className={`${showBg && "ctnBg"} ${"ctn"} px-16 max-md:px-0`}>
       <div className="wrp">
         <Link href='/' className={logo}>
-          <Image src={logo} alt="Lorelei Elizabeth John" width={100}/>
+          <Image src={logo} alt="Lorelei Elisabeth John" width={100}/>
         </Link>
 
         <div className="menu" onClick={closeMenu} style={menu? {right: '0'} : {}}>
