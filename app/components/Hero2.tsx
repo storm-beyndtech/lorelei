@@ -22,6 +22,7 @@ export default function Hero2() {
 
           <Button 
             label={"Start today!"} 
+            href="/contact"
             imgURL={IoIosArrowRoundForward} bgColor="coral-red" textColor="white"/>
         </div>
 

@@ -20,11 +20,12 @@ export default function Hero3() {
             Unlock your inner potential with me as your guide; true success emanates from within, not from external sources.
           </p>
 
-          <a href="https://brokercheck.finra.org/individual/summary/5969323">
+          
             <Button 
               label={"More details"} 
-              imgURL={IoIosArrowRoundForward} bgColor="coral-red" textColor="white"/> 
-          </a>
+              href="https://brokercheck.finra.org/individual/summary/5969323"
+              imgURL={IoIosArrowRoundForward} bgColor="coral-red" textColor="white"
+            />
         </div>
 
         <div className="relative flex flex-1 justify-center items-center xl:min-h-screen max-md:py-20">

@@ -1,8 +1,7 @@
 import Image from "next/image";
 import footerLogo from "../assets/footerLogo.svg";
 import { BsTwitterX } from "react-icons/bs";
-import { RiInstagramFill } from "react-icons/ri";
-import { FaFacebookSquare } from "react-icons/fa";
+import { FaTelegramPlane } from "react-icons/fa";
 
 export default function Footer() {
   return (
@@ -18,17 +17,13 @@ export default function Footer() {
           </p>
 
           <div className="flex justify-start items-center gap-5 mt-5">
-              <a href="#" className="flex justify-center items-center 
+              <a href="https://x.com/lorelei_e_john/" className="flex justify-center items-center 
                 text-white w-10 h-10 rounded-full border border-white">
                 <BsTwitterX width={20} height={20} />
               </a>
-              <a href="#" className="flex justify-center items-center 
+              <a href="https://t.me/lorelei_elizabeth" className="flex justify-center items-center 
                 text-white w-10 h-10 rounded-full border border-white">
-                <FaFacebookSquare width={20} height={20} /> 
-              </a>
-              <a href="#" className="flex justify-center items-center 
-                text-white w-10 h-10 rounded-full border border-white">
-                <RiInstagramFill width={30} height={30} />
+              <FaTelegramPlane width={20} height={20} /> 
               </a>
           </div>
         </div>

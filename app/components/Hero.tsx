@@ -1,7 +1,7 @@
 import Image from "next/image"
 import { IoIosArrowRoundForward } from "react-icons/io";
-import heroImg from "../assets/lorelei_elisabeth_john.jpg"
-import Button from "../components/Button"
+import heroImg from "../assets/lorelei_elisabeth_john.jpg";
+import Button from "../components/Button";
 
 export default function Hero() {
 
@@ -24,6 +24,7 @@ export default function Hero() {
 
           <Button 
             label={"Start today!"} 
+            href="/contact"
             imgURL={IoIosArrowRoundForward} bgColor="coral-red" textColor="white"/>
         </div>
 

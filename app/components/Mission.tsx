@@ -21,6 +21,7 @@ export default function Mission() {
           </p>
           <Button 
             label={"Start today!"} 
+            href="/contact"
             imgURL={IoIosArrowRoundForward} 
             borderColor="coral-red" textColor="black" bgColor="bg-none"/>
         </div>
