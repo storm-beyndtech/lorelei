@@ -58,7 +58,7 @@ export default function ContactForm() {
       });
 
       const data = await res.json();
-
+      
       if (res.ok) {
         setSuccess("Mail Sent Successfully");
         setLoading(false);
@@ -101,6 +101,7 @@ export default function ContactForm() {
                 autoComplete="given-name"
                 className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                 onChange={(e) => setFirstName(e.target.value)}
+                value={firstName}
               />
             </div>
           </div>
@@ -120,6 +121,7 @@ export default function ContactForm() {
                 autoComplete="family-name"
                 className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                 onChange={(e) => setLastName(e.target.value)}
+                value={lastName}
               />
             </div>
           </div>
@@ -139,6 +141,7 @@ export default function ContactForm() {
                 autoComplete="email"
                 className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                 onChange={(e) => setEmail(e.target.value)}
+                value={email}
               />
             </div>
           </div>
@@ -160,11 +163,10 @@ export default function ContactForm() {
                   name="country"
                   className="w-[70px] h-full rounded-md border-0 bg-transparent bg-none px-1 text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm"
                   onChange={handleCountryChange}
-                  defaultValue={countryCode}
                 >
                   {countries.map((country, i) => (
                     <option key={i} value={country.code}>
-                      {country.code}
+                      {country.name}
                     </option>
                   ))}
                 </select>
@@ -176,6 +178,7 @@ export default function ContactForm() {
                 autoComplete="tel"
                 className="block w-full rounded-md border-0 px-3.5 py-2 pl-20 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                 onChange={(e) => setPhoneNumber(e.target.value)}
+                value={phoneNumber}
               />
             </div>
           </div>
@@ -195,6 +198,7 @@ export default function ContactForm() {
                 className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                 defaultValue={""}
                 onChange={(e) => setMessage(e.target.value)}
+                value={message}
               />
             </div>
           </div>
