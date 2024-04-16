@@ -33,7 +33,7 @@ export default function Footer() {
             <h4 className="text-xl font-medium text-white">Pages</h4>
               <a href="/about" className="text-white-400 text-base mt-3 
               font-montserrat leading-normal hover:text-gray-500">About</a>
-              <a href="/services" className="text-white-400 text-base mt-3 
+              <a href="/service" className="text-white-400 text-base mt-3 
               font-montserrat leading-normal hover:text-gray-500">Services</a>
               <a href="/contact" className="text-white-400 text-base mt-3 
               font-montserrat leading-normal hover:text-gray-500">Contact</a>
